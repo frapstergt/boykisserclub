@@ -1,0 +1,60 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta http-equiv="X-UA-Compatible" content="ie=edge">
+  <title> Monkeverse </title>
+  <link rel="stylesheet" href="style.css">
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css" />
+</head>
+
+<body>
+  <div class="toast">
+    <div class="toast-content">
+      <i class="fas fa-solid fa-check check"></i>
+      <div class="message">
+        <span class="text text-1">Notification</span>
+        <span class="text text-2">The game's link is now in your clipboard!</span>
+      </div>
+    </div>
+    <i class="fa-solid fa-xmark close"></i>
+    <div class="progress"></div>
+  </div>
+  <section class="main">
+    <div class="profile-card">
+      <div class="image">
+        <img class="profile-pic"
+          src="https://cdn.discordapp.com/attachments/1187050343301910619/1212748020488216581/Untitled209_20240226012316.png?ex=65fc311b&is=65e9bc1b&hm=4073b6605193dd5e92122ed190b87099557bff73a98e396bd238894a514076e2&">
+      </div>
+
+      <div class="data">
+        <h2 class="data-h2">Monkeverse</h2>
+        <span>Probably the best gtag fangame.</span>
+      </div>
+      <div class="row">
+        <div class="info">
+          <h3>Players</h3>
+          <span id="Players">13</span>
+        </div>
+        <div class="info">
+          <h3>Members</h3>
+          <span id="Members">24</span>
+        </div>
+      </div>
+
+      <div class="buttons">
+        <a href="#" id="btn" class="btn" onclick="copyToClipboard('ApplabLINKHERE', this, 'Download!')">Download!</a>
+      </div>
+
+    </div>
+  </section>
+  <script src="bubble.js"></script>
+  <script src="copy.js"></script>
+  <script src="number.js"></script>
+  <script src="notification.js"></script>
+  <script src="profilepic.js"></script>
+</body>
+
+</html>
