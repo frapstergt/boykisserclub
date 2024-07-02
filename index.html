@@ -24,12 +24,16 @@
         </div>
     </div>
 
+
+    <div class="overlay" onclick="playMusic()">
+	<div class="centered">
+		<div style="color: white;">Click to enter :3</div>
+	</div>
+    </div>
+
     <audio id="backgroundMusic" loop>
         <source src="music.mp3" type="audio/mpeg">
-        Your browser does not support the audio element.
     </audio>
-
-    <div class="overlay" onclick="playMusic()"></div>
 
     <script>
         var music = document.getElementById('backgroundMusic');
