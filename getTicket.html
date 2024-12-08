@@ -1,0 +1,26 @@
+<!DOCTYPE html>
+<html lang="en"></html>
+<body>
+    <h1 id="output"></h1>
+
+    <script>
+        // Function to get the value of a URL parameter
+        function getParameterByName(name) {
+            const urlParams = new URLSearchParams(window.location.search);
+            return urlParams.get(name);
+        }
+
+        const allowedIds = ['5b2e0eac00bd9d0522252447db8a540459745b151080'];
+
+        const idValue = getParameterByName('id');
+
+        const output = document.getElementById('output');
+        
+        if (allowedIds.includes(idValue)) {
+            output.textContent = 'NWIyZTBlYWMwMGJkOWQwNTIyMjUyNDQ3ZGI4YTU0MDQ1OTc0NWIxNTEwODA=';
+        } else {
+            output.textContent = '???';
+        }
+    </script>
+</body>
+</html>
